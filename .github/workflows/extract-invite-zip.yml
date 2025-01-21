@@ -15,9 +15,4 @@ jobs:
 
     - name: Extract invite.zip
       run: |
-        unzip invite.zip -d extracted/
-
-    - name: Move extracted files to root
-      run: |
-        mv extracted/* .
-        rm -rf extracted/
+        unzip -o invite.zip -d .
